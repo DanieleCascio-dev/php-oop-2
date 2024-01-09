@@ -6,7 +6,7 @@ class Product extends Category
   protected $name;
   protected $price;
   protected $image;
-  protected $category;
+  /* protected $category; */
 
   /* NAME */
   public function setName($_name)
@@ -17,7 +17,7 @@ class Product extends Category
   {
     return $this->name;
   }
-  
+
   /* PRICE */
   public function setPrice($_price)
   {
@@ -29,5 +29,28 @@ class Product extends Category
   public function getPrice(){
     return $this->price;
   }
+  /* IMAGE */
+  public function setImage($_image){
+
+    if(is_file($_image)){
+      $this->image = $_image;
+    }
+
+  }
+
+  public function getImage(){
+    
+    return $this->image;
+  }
+
+  /* CATERGORY */
+
+/*  public function setCategory($_category){
+  $this->category = $_category;
+ }
+
+ public function getCategory(){
+  return $this->category;
+ } */
 
 }
