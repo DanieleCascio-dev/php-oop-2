@@ -7,12 +7,12 @@ class Food extends Product {
 
   public function setWeight($_weight){
     if($_weight < 100 && $_weight > 0 ){
-      $this->weigth = $_weight . "Kg";
+      $this->weigth = $_weight;
 
     }
   }
 
   public function getWeight(){
-    return $this->weigth;
+    return $this->weigth . "Kg";
   }
 }

@@ -21,4 +21,8 @@ class Category
   public function get_animal(){
     return $this->animal;
   }
+
+  public function get_icon(){
+    return $this->icon;
+  }
 }
