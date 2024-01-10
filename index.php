@@ -22,6 +22,8 @@ require_once __DIR__ . "/database/db.php";
         <li class="list-group-item">Animal: <?php echo $dry_food->getCategory()->get_animal() ?></li>
         <li class="list-group-item">Price: <?php echo $dry_food->getPrice() ?></li>
         <li class="list-group-item">Weight: <?php echo $dry_food->getWeight() ?></li>
+        <li class="list-group-item">Washable: <?php echo $dry_food->isWashable() ?></li>
+       
         
       </ul>
     </p>

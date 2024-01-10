@@ -1,8 +1,10 @@
 <?php
 require_once __DIR__ . "/Category.php";
+require_once __DIR__ . "/../Traits/Whasable.php";
 
 class Product
 {
+  use Washable;
   protected $name;
   protected $price;
   protected $image;
@@ -35,6 +37,8 @@ class Product
   {
     if($_price > 0 ){
       $this->price = $_price;
+    } else{
+      throw new Exception("Deve essere un valore positivo!");
     }
   }
 

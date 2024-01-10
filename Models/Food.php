@@ -8,7 +8,6 @@ class Food extends Product {
   public function setWeight($_weight){
     if($_weight < 100 && $_weight > 0 ){
       $this->weigth = $_weight;
-
     }
   }
 
