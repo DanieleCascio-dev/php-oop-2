@@ -22,7 +22,7 @@ require_once __DIR__ . "/database/db.php";
         <li class="list-group-item">Animal: <?php echo $dry_food->getCategory()->get_animal() ?></li>
         <li class="list-group-item">Price: <?php echo $dry_food->getPrice() ?></li>
         <li class="list-group-item">Weight: <?php echo $dry_food->getWeight() ?></li>
-        <li class="list-group-item">Washable: <?php echo $dry_food->isWashable() ?></li>
+      
        
         
       </ul>
@@ -60,6 +60,7 @@ require_once __DIR__ . "/database/db.php";
         <li class="list-group-item">Animal: <?php echo $toy1->getCategory()->get_animal() ?></li>
         <li class="list-group-item">Price: <?php echo $toy1->getPrice() ?></li>
         <li class="list-group-item">Material: <?php echo $toy1->getMaterial() ?></li>
+        <li class="list-group-item">Washable: <?php echo $toy1->isWashable() ?></li>
         
       </ul>
     </p>
@@ -78,6 +79,7 @@ require_once __DIR__ . "/database/db.php";
         <li class="list-group-item">Animal: <?php echo $toy2->getCategory()->get_animal() ?></li>
         <li class="list-group-item">Price: <?php echo $toy2->getPrice() ?></li>
         <li class="list-group-item">Material: <?php echo $toy2->getMaterial() ?></li>
+        <li class="list-group-item">Washable: <?php echo $toy2->isWashable() ?></li>
         
       </ul>
     </p>
@@ -96,6 +98,7 @@ require_once __DIR__ . "/database/db.php";
         <li class="list-group-item">Animal: <?php echo $kennel->getCategory()->get_animal() ?></li>
         <li class="list-group-item">Price: <?php echo $kennel->getPrice() ?></li>
         <li class="list-group-item">Size: <?php echo $kennel->getSize() ?></li>
+        <li class="list-group-item">Washable: <?php echo $kennel->isWashable() ?></li>
         
       </ul>
     </p>
